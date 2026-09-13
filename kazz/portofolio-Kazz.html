@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Azka</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #f2f2f2;
+            color: #111;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+
+        .page {
+            width: min(900px, 94%);
+            margin: 25px auto;
+            padding: 45px 55px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+            min-height: 1120px;
+        }
+
+        h1, h2, h3 {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0 0 10px;
+            font-size: 36px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 22px;
+        }
+
+        nav {
+            text-align: center;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #333;
+            margin-bottom: 25px;
+        }
+
+        nav a {
+            color: #0645ad;
+            margin: 0 3px;
+        }
+
+        section {
+            scroll-margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-top: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        h3 {
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .profile-photo {
+            display: block;
+            width: 190px;
+            height: 245px;
+            object-fit: cover;
+            margin: 10px auto 4px;
+            border: 2px solid #111;
+        }
+
+        .caption {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 18px;
+        }
+
+        .red {
+            color: red;
+            font-size: 18px;
+        }
+
+        .blue {
+            color: blue;
+            font-size: 18px;
+        }
+
+        .quote {
+            width: 88%;
+            margin: 20px auto;
+            padding-left: 18px;
+            border-left: 4px solid #888;
+            font-style: italic;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .simple-list {
+            padding-left: 22px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 14px;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        th {
+            text-align: center;
+            background: #f4f4f4;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .contact-box {
+            padding: 14px;
+            border: 1px solid #999;
+            margin-top: 15px;
+        }
+
+        .contact-box a {
+            color: #0645ad;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding-top: 12px;
+            border-top: 1px solid #ccc;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .page-break {
+            break-before: page;
+            page-break-before: always;
+        }
+
+        @media (max-width: 700px) {
+            .page {
+                width: 96%;
+                padding: 28px 22px;
+                margin: 12px auto;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            nav {
+                line-height: 2;
+            }
+
+            .profile-photo {
+                width: 160px;
+                height: 215px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 7px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .page {
+                width: 100%;
+                margin: 0;
+                box-shadow: none;
+                min-height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ==================== HALAMAN 1 ==================== -->
+    <div class="page">
+        <header>
+            <h1>PORTOFOLIO SAYA</h1>
+            <div class="subtitle">Selamat Datang di Halaman Profil &amp; Pembelajaran HTML</div>
+
+            <nav>
+                <a href="#tentang">Tentang Saya</a> |
+                <a href="#keahlian">Keahlian &amp; Hobi</a> |
+                <a href="#pendidikan">Riwayat Pendidikan</a> |
+                <a href="#proyek">Portofolio Proyek</a> |
+                <a href="#kontak">Hubungi Saya</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="tentang">
+                <h2>Tentang Saya</h2>
+
+                <img src="foto-azka.jpeg" alt="Foto profil Azka" class="profile-photo">
+                <div class="caption">Foto Profil</div>
+
+                <p>
+                    Halo! Nama saya <strong>Azka</strong>. Saya adalah seorang pelajar yang
+                    sedang belajar dasar-dasar HTML dan tertarik dengan dunia pemrograman.
+                </p>
+
+                <p>
+                    <span class="red">Saya sedang belajar membuat halaman web</span>
+                    dan <span class="blue">mencoba membuat project sederhana</span>
+                    menggunakan HTML.
+                </p>
+
+                <p>Beberapa hal yang sedang saya pelajari:</p>
+                <ol>
+                    <li><strong>Struktur HTML</strong> untuk membuat kerangka halaman.</li>
+                    <li><em>Format teks</em> seperti tebal dan miring.</li>
+                    <li>Membuat <mark>teks yang ditandai</mark>.</li>
+                    <li>Membuat tautan atau <u>hyperlink</u>.</li>
+                </ol>
+
+                <div class="quote">
+                    “Pendidikan adalah senjata paling mematikan di dunia, karena dengan pendidikan
+                    Anda dapat mengubah dunia.” - <strong>Nelson Mandela</strong>
+                </div>
+            </section>
+
+            <section id="keahlian">
+                <h2>Keahlian, Pengalaman, dan Hobi</h2>
+
+                <h3>Keahlian Sederhana</h3>
+                <ul class="simple-list">
+                    <li>Membuat halaman HTML sederhana</li>
+                    <li>Mengatur teks dan gambar</li>
+                    <li>Membuat tabel dan daftar</li>
+                    <li>Membuat hyperlink</li>
+                    <li>Belajar dasar JavaScript</li>
+                </ul>
+
+                <h3>Tahapan Belajar Web</h3>
+                <ol>
+                    <li>Memahami struktur dasar HTML</li>
+                    <li>Mempelajari tag HTML</li>
+                    <li>Latihan membuat halaman sederhana</li>
+                    <li>Mencoba menambahkan gambar dan tautan</li>
+                    <li>Mengunggah project ke GitHub</li>
+                </ol>
+
+                <h3>Hobi</h3>
+                <ol type="A">
+                    <li>Belajar coding</li>
+                    <li>Bermain game</li>
+                    <li>Mendengarkan musik</li>
+                </ol>
+            </section>
+        </main>
+    </div>
+
+    <!-- ==================== HALAMAN 2 ==================== -->
+    <div class="page page-break">
+        <section id="pendidikan">
+            <h2>Riwayat Pendidikan</h2>
+            <p>Tabel dibuat tanpa kolom tahun kelulusan dan tanpa kolom jurusan.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tingkat</th>
+                        <th>Nama Sekolah / Institusi</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="center">SD</td>
+                        <td>SD Muhammadiyah Plus</td>
+                        <td class="center">Selesai</td>
+                    </tr>
+                    <tr>
+                        <td class="center">SMP</td>
+                        <td>SMPIT Permata</td>
+                        <td class="center">Selesai</td>
+                    </tr>
+                    <tr>
+                        <td class="center">SMA</td>
+                        <td>SMA 2 Mojokerto</td>
+                        <td class="center">Sedang ditempuh</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="proyek">
+            <h2>Daftar Proyek Latihan</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Kategori</th>
+                        <th>Nama Proyek</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="center">1</td>
+                        <td>HTML Sederhana</td>
+                        <td>Halaman Biodata Diri</td>
+                        <td>Selesai</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="kontak">
+            <h2>Hubungi Saya</h2>
+            <div class="contact-box">
+                <p><strong>Nama:</strong> Azka</p>
+                <p><strong>Email:</strong> <a href="mailto:emailkamu@example.com">emailkamu@example.com</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank">Profil GitHub Saya</a></p>
+                <p><strong>Pesan:</strong> Terima kasih sudah mengunjungi portofolio saya.</p>
+            </div>
+        </section>
+
+        <footer>
+            Portofolio Azka &copy; 2026 — Dibuat untuk latihan HTML
+        </footer>
+    </div>
+
+</body>
+</html>
