@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <title>Portofolio Pribadi - Belajar HTML Dasar</title>
+</head>
+
+<body id="atas" bgcolor=>
+
+    <!-- ======================================================= -->
+    <!-- 1. HEADER & NAVIGASI LINK SEDERHANA                      -->
+    <!-- ======================================================= -->
+    <header align="center">
+        <!-- Penggunaan tag Heading h1 sampai h3 -->
+        <h1>PORTOFOLIO AZKA</h1>
+        <h3>Selamat Datang di Halaman Profil & Pembelajaran HTML</h3>
+
+        <!-- Navigasi internal menggunakan anchor text link -->
+        <nav>
+            <a href="#tentang">Tentang Saya</a> |
+            <a href="#keahlian">Keahlian & Hobi</a> |
+            <a href="#pendidikan">Riwayat Pendidikan</a> |
+            <a href="#proyek">Portofolio Proyek</a> |
+            <a href="#kontak">Hubungi Saya</a>
+        </nav>
+    </header>
+
+    <!-- Garis pemisah horizontal -->
+    <hr size="3" color="#333333">
+
+    <!-- ======================================================= -->
+    <!-- 2. BAGIAN TENTANG SAYA (FORMATTING TEKS & WARNA)         -->
+    <!-- ======================================================= -->
+    <section id="tentang">
+        <h2>Tentang Saya</h2>
+
+        <!-- Menampilkan gambar dengan atribut border, width, dan alt -->
+        <p align="center">
+            <img src="foto-azka.jpeg" alt="Foto Profil Pengguna" width="150" height="150" border="2">
+            <br>
+            <small><i>Gambar 1: Foto Profil Sederhana</i></small>
+        </p>
+
+        <!-- Contoh berbagai macam pemformatan teks HTML murni -->
+        <p>
+            Halo! Nama saya <b>Farzal Azka</b>. Saya adalah seorang <i>pelajar web development</i> pemula.
+            Saat ini saya sedang mempelajari <u>Dasar-Dasar HTML</u> tanpa bantuan styling eksternal.
+        </p>
+
+        <!-- Pemformatan warna dan ukuran teks menggunakan tag <font> bawaan HTML -->
+        <p>
+            <font color="red" size="4" face="Arial">
+                Teks ini berwarna merah dengan font Arial.
+            </font>
+            dan
+            <font color="blue" size="4">
+                teks ini berwarna biru untuk menonjolkan poin penting.
+            </font>
+        </p>
+
+        <p>
+            Berikut adalah contoh tag pemformatan teks lainnya:
+        </p>
+        <!-- Daftar teks khusus: coret, sorot, cetak tebal khusus, subskrip, superskrip -->
+        <p>
+            1. <strong>Teks Kuat (Strong)</strong> untuk penekanan penting.<br>
+            2. <em>Teks Berpenekanan (Emphasis)</em> mirip huruf miring.<br>
+            3. <mark>Teks dengan Stabilo / Highlight</mark> memakai tag &lt;mark&gt;.<br>
+            4. <del>Teks yang dicoret (Delete)</del> untuk revisi atau harga lama.<br>
+            5. Rumus kimia air: H<sub>2</sub>O (menggunakan tag &lt;sub&gt;).<br>
+            6. Rumus matematika kuadrat: 5<sup>2</sup> = 25 (menggunakan tag &lt;sup&gt;).
+        </p>
+
+        <!-- Tag Blockquote untuk kutipan kata mutiara -->
+        <blockquote>
+            <p>
+                <q>Pendidikan adalah senjata paling mematikan di dunia, karena dengan pendidikan Anda dapat mengubah
+                    dunia.</q>
+                - <b>Nelson Mandela</b>
+            </p>
+        </blockquote>
+    </section>
+
+    <hr size="1" color="#cccccc">
+
+    <!-- ======================================================= -->
+    <!-- 3. BULLET & NUMBERING (LISTS)                           -->
+    <!-- ======================================================= -->
+    <section id="keahlian">
+        <h2>Keahlian, Pengalaman, dan Hobi</h2>
+
+        <!-- Unordered List (Bullet) -->
+        <h3>Keahlian Teknis (Bullet List)</h3>
+        <ul type="square">
+            <li>Memahami Struktur Dasar Dokumen HTML</li>
+            <li>Merancang Formulir Interaktif</li>
+            <li>Pengelolaan Format Teks</li>
+        </ul>
+
+        <!-- Ordered List (Numbering) dengan variasi tipe -->
+        <h3>Tahapan Belajar Web (Numbering Angka)</h3>
+        <ol type="1">
+            <li>Memahami konsep cara kerja web browser dan server</li>
+            <li>Mempelajari tag dan elemen dasar HTML</li>
+            <li>Menyusun tata letak halaman tanpa CSS</li>
+            <li>Mengunggah halaman ke server atau GitHub Pages</li>
+        </ol>
+
+        <!-- Ordered List dengan tipe huruf abjad -->
+        <h3>Aktivitas Luar Jam Belajar (Numbering Huruf)</h3>
+        <ol type="A">
+            <li>Bermain Game</li>
+            <li>Berolahraga</li>
+            <li>Menulis catatan ringkasan coding</li>
+        </ol>
+
+        <!-- Definition List (Daftar Istilah & Penjelasan) -->
+        <h3>Kamus Istilah Singkat (Definition List)</h3>
+        <dl>
+            <dt><b>HTML</b></dt>
+            <dd><i>HyperText Markup Language</i>, yaitu bahasa markah standar untuk pembuatan halaman web.</dd>
+
+            <dt><b>Tag</b></dt>
+            <dd>Tanda kurung sudut (&lt; &gt;) yang digunakan untuk membuka dan menutup elemen HTML.</dd>
+
+            <dt><b>Attribute</b></dt>
+            <dd>Informasi tambahan yang disematkan ke dalam tag pembuka (contoh: href, src, width).</dd>
+        </dl>
+    </section>
+
+    <hr size="1" color="#cccccc">
+
+    <!-- ======================================================= -->
+    <!-- 4. TABEL (RIWAYAT PENDIDIKAN & PROYEK)                   -->
+    <!-- ======================================================= -->
+    <section id="pendidikan">
+        <h2>Riwayat Pendidikan & Jadwal</h2>
+        <p>Tabel berikut menggunakan atribut bawaan: border, cellpadding, cellspacing, dan penggabungan kolom (colspan).
+        </p>
+
+        <!-- Tabel Riwayat Pendidikan -->
+        <table border="1" cellpadding="8" cellspacing="0" width="100%">
+            <!-- Baris Judul Tabel -->
+            <tr bgcolor="#dddddd">
+                <th>Tingkat</th>
+                <th>Nama Sekolah / Institusi</th>
+                <th>Jurusan</th>
+                <th>Tahun Kelulusan</th>
+                <th>Status</th>
+            </tr>
+            <!-- Baris Data 1 -->
+            <tr align="center">
+                <td>SD</td>
+                <td align="left">SD Muhammmadiyah Plus</td>
+                <td>-</td>
+                <td>2023</td>
+                <td>Lulus</td>
+            </tr>
+            <!-- Baris Data 2 -->
+            <tr align="center">
+                <td>SMP</td>
+                <td align="left">SMPIT Permata</td>
+                <td>-</td>
+                <td>2026</td>
+                <td>Lulus</td>
+            </tr>
+            <!-- Baris Data 3 -->
+            <tr align="center">
+                <td>SMK / SMA</td>
+                <td align="left">SMAN 2 Mojokerto</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Sedang Ditempuh</td>
+            </tr>
+            <!-- Baris dengan Colspan -->
+            <tr bgcolor="#eeeeee">
+                <td colspan="4" align="right"><b>Total Lama Belajar Formal:</b></td>
+                <td align="center"><b>12 Tahun</b></td>
+            </tr>
+        </table>
+    </section>
+
+    <br>
+
+    <section id="proyek">
+        <h2>Daftar Proyek Latihan</h2>
+
+        <!-- Tabel Proyek dengan Rowspan -->
+        <table border="1" cellpadding="6" cellspacing="2" width="100%">
+            <tr bgcolor="#e0e0e0">
+                <th>No</th>
+                <th>Kategori</th>
+                <th>Nama Proyek</th>
+                <th>Target Selesai</th>
+            </tr>
+            <tr>
+                <td align="center">1</td>
+                <!-- Rowspan menggabungkan 2 baris kategori yang sama -->
+                <td rowspan="2" align="center" bgcolor="#f9f9f9"><b>HTML Sederhana</b></td>
+                <td>Halaman Biodata Diri</td>
+                <td>Selesai</td>
+        </table>
+    </section>
+
+    <hr size="1" color="#cccccc">
+
+    <!-- ======================================================= -->
+    <!-- 5. FORMULIR INTERAKTIF (FORM LENGKAP)                   -->
+    <!-- ======================================================= -->
+    <section id="kontak">
+        <h2>Hubungi Saya</h2>
+        <p>Silakan isi formulir di bawah ini untuk mengirimkan pesan, kritik, atau saran latihan HTML:</p>
+
+        <form action="#" method="post">
+            <!-- Fieldset dan Legend untuk mengelompokkan form -->
+            <fieldset>
+                <legend><b>Formulir Pesan & Identitas Pengunjung</b></legend>
+
+                <!-- Input Teks Biasa -->
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" size="40" placeholder="Farzal Azka"
+                        required>
+                </p>
+
+                <!-- Input Email -->
+                <p>
+                    <label for="email">Alamat Email:</label><br>
+                    <input type="email" id="email" name="email" size="40" placeholder="zaikuuuu@gmail.com" required>
+                </p>
+
+                <!-- Input Nomor Telepon -->
+                <p>
+                    <label for="telepon">Nomor WhatsApp / HP:</label><br>
+                    <input type="tel" id="telepon" name="telepon" size="40" placeholder="08xxxxxxxxxx">
+                </p>
+
+                <!-- Input Radio Button (Pilihan Tunggal) -->
+                <p>
+                    Jenis Kelamin:<br>
+                    <input type="radio" id="pria" name="gender" value="Laki-laki">
+                    <label for="pria">Laki-laki</label>
+                    <input type="radio" id="wanita" name="gender" value="Perempuan">
+                    <label for="wanita">Perempuan</label>
+                </p>
+
+                <!-- Dropdown Select -->
+                <p>
+                    <label for="kategori">Alasan Menghubungi:</label><br>
+                    <select id="kategori" name="kategori">
+                        <option value="">-- Silakan Pilih Kategori --</option>
+                        <option value="tanya">Pertanyaan seputar HTML</option>
+                        <option value="kolaborasi">Mengajak Kolaborasi</option>
+                        <option value="saran">Memberikan Saran Perbaikan</option>
+                        <option value="lainnya">Lain-lain</option>
+                    </select>
+                </p>
+
+                <!-- Checkbox (Pilihan Jamak) -->
+                <p>
+                    Topik HTML yang ingin Anda pelajari bersama:<br>
+                    <input type="checkbox" id="topik1" name="topik" value="Teks">
+                    <label for="topik1">Formatting Teks & Warna</label><br>
+                    <input type="checkbox" id="topik2" name="topik" value="List">
+                    <label for="topik2">Daftar (List)</label><br>
+                    <input type="checkbox" id="topik3" name="topik" value="Tabel">
+                    <label for="topik3">Tabel (Rowspan & Colspan)</label><br>
+                    <input type="checkbox" id="topik4" name="topik" value="Form">
+                    <label for="topik4">Elemen Form & Input</label>
+                </p>
+
+                <!-- Textarea untuk pesan panjang -->
+                <p>
+                    <label for="pesan">Pesan atau Masukan:</label><br>
+                    <textarea id="pesan" name="pesan" rows="6" cols="45"
+                        placeholder="Tuliskan pesan Anda di sini..."></textarea>
+                </p>
+
+                <!-- Tombol Submit dan Reset -->
+                <p>
+                    <input type="submit" value="Kirim Pesan">
+                    <input type="reset" value="Kosongkan Form">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 6. TAMBAHAN ELEMEN MENARIK LAINNYA (HTML5 MURNI)        -->
+    <!-- ======================================================= -->
+    <section>
+        <h2>Fitur Tambahan Pembelajaran</h2>
+
+        <!-- Tag Details & Summary (Akordion bawaan HTML murni tanpa JS/CSS) -->
+        <details>
+            <summary><b>Klik di sini untuk melihat FAQ (Pertanyaan Umum)</b></summary>
+            <p>
+                <b>Tanya:</b> Apakah halaman ini benar-benar tidak menggunakan CSS?<br>
+                <b>Jawab:</b> Benar, halaman ini 100% menggunakan kode HTML murni dengan atribut standar bawaan seperti
+                <code>border</code>, <code>bgcolor</code>, <code>font</code>, dan <code>align</code>.
+            </p>
+        </details>
+    </section>
+
+    <hr size="1" color="#cccccc">
+
+    <!-- ======================================================= -->
+    <!-- 7. FOOTER                                               -->
+    <!-- ======================================================= -->
+    <footer align="center">
+        <p>
+            <a href="#atas">▲ Kembali ke Bagian Paling Atas</a>
+        </p>
+        <p>
+            <small>
+                Hak Cipta &copy; 2026 - Dibuat untuk Latihan Pembelajaran HTML Dasar.
+            </small>
+        </p>
+    </footer>
+
+</body>
+
+</html>
